@@ -1,3 +1,7 @@
-@import url(_vars.scss);
-@import url(_reset.scss);
-@import url(_fonts.scss);
+@import 'vars';
+@import 'reset';
+@import 'fonts';
+
+body {
+  background: $gradient-red-text;
+}
