@@ -20,7 +20,7 @@
     width: 42px;
     height: 42px;
     border-radius: $radius-rounded;
-    border: 2px solid $basic-white¬;
+    border: 2px solid $basic-white;
     position: relative;
     margin: 0 auto 30px;
 
@@ -185,7 +185,7 @@
     left: 8px;
     right: 8px;
     background: $basic-white;
-    border-radius: $radius-md $radius-md 0px 0px;
+    border-radius: $radius-md $radius-md 0 0;
     padding: 12px;
     transition: .2s linear;
 
