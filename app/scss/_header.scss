@@ -4,16 +4,22 @@
   flex-flow: column;
   justify-content: space-between;
   background: url('../images/header-bg.png') no-repeat center / auto 100%;
+  position: relative;
 
   &__header {
   }
 
   &__title {
     color: $basic-white;
-    font-size: 36px;
+    font-size: 38px;
     text-align: center;
     font-weight: 700;
     padding: 0 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   &__link {
