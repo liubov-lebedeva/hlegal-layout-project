@@ -10,6 +10,10 @@
       display: flex;
       align-items: center;
     }
+    @include viewport-xl {
+      max-width: 1560px;
+      padding: 0 120px;
+    }
   }
 
   &__links {
@@ -17,8 +21,9 @@
     gap: 30px;
     white-space: nowrap;
     overflow: auto;
-    padding: 0 30px 25px 0;
+    padding: 0 30px 15px 0;
     margin-right: -30px;
+    font-weight: 700;
 
     &::-webkit-scrollbar {
       width: 0;
@@ -26,19 +31,16 @@
 
     @include viewport-md {
       margin-right: calc(-50vw + 324px);
+      font-size: 38px;
     }
 
     @include viewport-lg {
       margin: 0;
       padding: 0 60px 0 0;
       flex-flow: column;
-      flex: 1 1 40%;
-      border-right: 4px solid rgba(255, 255, 255, 0.30);
+      flex: 1 1 435px;
+      border-right: 4px solid $tabs-divider;
       text-align: right;
-    }
-
-    @include viewport-xl {
-      flex: 1 1 30%;
     }
   }
 
@@ -56,12 +58,12 @@
   }
 
   &__content {
-    border-top: 4px solid rgba(255, 255, 255, 0.30);
-    padding: 34px 0 0;
+    border-top: 4px solid $tabs-divider;
+    padding: 30px 0 0;
     @include viewport-lg {
       margin: 0;
       padding: 0 0 0 60px;
-      flex: 1 1 40%;
+      flex: 1 1 50%;
       border: 0;
     }
     @include viewport-xl {
@@ -79,11 +81,12 @@
 
   &__content-title {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
   }
 
   &__content-desc {
     font-size: 19px;
+    line-height: 1.5;
   }
 }
