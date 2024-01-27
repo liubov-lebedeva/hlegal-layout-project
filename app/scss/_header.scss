@@ -209,8 +209,8 @@
   }
 
   &__nav-close {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     position: relative;
     cursor: pointer;
     margin-bottom: 20px;
@@ -220,15 +220,20 @@
       content: '';
       position: absolute;
       top: 50%;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      width: 24px;
       height: 2px;
+      transform: translate(-50%, -50%) rotate(45deg);
       background: #EC6F5D;
-      transform: rotate(45deg);
     }
 
     &::after {
-      transform: rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+      background: $separator-color;
+      border-radius: $radius-sm;
     }
 
     @include viewport-md {
