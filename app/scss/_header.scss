@@ -41,6 +41,11 @@
       border-left: 2px solid $basic-white;
       transform: rotate(-45deg);
     }
+
+    &:hover, &:hover::before {
+      border-color: $accent-color;
+    }
+
   }
 }
 
