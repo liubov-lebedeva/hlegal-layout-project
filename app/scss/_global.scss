@@ -6,6 +6,22 @@ body {
 
 .wrapper {
   background: $gradient-supersoft;
+  border-radius: 0 0 $radius-md $radius-md;
+  position: relative;
+}
+
+.wrapper-border-bottom {
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  height: 10px;
+  border-radius: 0 0 $radius-md $radius-md;
+  background: $wrapper-bottom-color;
+}
+
+.wrapper-border-bottom-light {
+  width: calc(100% - 80px);
+  background: $wrapper-bottom-color-light;
 }
 
 .container {
