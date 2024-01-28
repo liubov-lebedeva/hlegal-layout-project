@@ -2,6 +2,25 @@
   padding: 30px 0 60px;
   line-height: normal;
 
+  @include viewport-md {
+    padding-top: 60px;
+  }
+
+  &__container {
+    padding: 30px 0 0;
+    display: grid;
+    gap: 30px;
+
+    @include viewport-md {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 60px 0 0;
+      gap: 30px;
+    }
+    @include viewport-lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   &-link {
     @include base-link;
     display: inline-block;
@@ -14,7 +33,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: 5px;
+      top: 5.3px;
       right: 0;
       width: 7px;
       height: 7px;
@@ -24,6 +43,10 @@
       transition: .2s;
     }
 
+    &:hover::after {
+      border-color: $accent-color;
+    }
+
   }
 
   &-title {
@@ -31,11 +54,12 @@
     @include main-gradient-text;
     font-size: 30px;
     font-weight: 700;
-
+    @include viewport-md {
+      font-size: 38px;
+    }
   }
 
   &__item {
-    padding: 30px 0 0;
   }
 
 
@@ -67,7 +91,7 @@
     color: $basic-white;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 26px;
     padding: 15px 0 0;
   }
 }
