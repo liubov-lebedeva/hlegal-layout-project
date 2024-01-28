@@ -6,9 +6,6 @@
     padding-top: 60px;
   }
 
-  &__container {
-  }
-
   &__swiper {
     margin-bottom: 30px;
   }
@@ -25,7 +22,6 @@
 
   &__image {
     height: 500px;
-    // background: url('../images/boris-animal.png') no-repeat center/cover;
     position: relative;
 
     img {
@@ -68,6 +64,9 @@
       border-right: 2px solid $regular-color;
       transform: rotate(-45deg);
       transition: .2s;
+    }
+    &:hover::before {
+      border-color: $accent-color;
     }
   }
 

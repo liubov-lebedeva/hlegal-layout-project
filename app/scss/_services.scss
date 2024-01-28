@@ -51,17 +51,9 @@
 
   &-title {
     padding: 10px 0 0;
+    @include subtitle;
     @include main-gradient-text;
-    font-size: 30px;
-    font-weight: 700;
-    @include viewport-md {
-      font-size: 38px;
-    }
   }
-
-  &__item {
-  }
-
 
   &__item-icon {
     border-radius: $radius-lg;
