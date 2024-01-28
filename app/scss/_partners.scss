@@ -1,0 +1,74 @@
+.partners {
+}
+
+.partners-title {
+  color: $main-color;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.partners__container {
+}
+
+
+.partners__box {
+
+}
+
+.partners__item div {
+  height: 120px;
+  width: 100%;
+}
+
+.partners__item__hillel {
+  background: $partner-color-1 url("../images/partner-1-hillel.png") no-repeat center/auto 48px;
+}
+
+.partners__item__wannabiz {
+  background: $partner-color-2 url("../images/partner-2-wannabiz.png") no-repeat center/auto 32px;
+}
+
+.partners__item__tapgerine {
+  background: $partner-color-3 url("../images/partner-3-tapgerine.png") no-repeat center/auto 44px;
+}
+
+.partners__item__3dlook {
+  background: $partner-color-4 url("../images/partner-4-3dlook.png") no-repeat center/auto 42px;
+}
+
+.partners__item__orangear {
+  background: $partner-color-5 url("../images/partner-5-orangear.png") no-repeat center/auto 44px;
+}
+
+.partners__item__adtelligent {
+  background: $partner-color-6 url("../images/partner-6-adtelligent.png") no-repeat center/auto 48px;
+}
+
+.partners__item__clickky {
+  background: $partner-color-7 url("../images/partner-7-clickky.png") no-repeat center/auto 61px;
+}
+
+.partners__item__eco-leasing {
+  background: $partner-color-8 url("../images/partner-8-eco-leasing.png") no-repeat center/auto 76px;
+}
+
+.partners__item__city-park {
+  background: $partner-color-9 url("../images/partner-9-infratek.png") no-repeat center/auto 60px;
+}
+
+.partners__item__infratek {
+  background: $partner-color-10 url("../images/partner-10-city-park.png") no-repeat center/auto 38px;
+}
+
+.partners__item__artprint {
+  background: $partner-color-11 url("../images/partner-11-artprint.png") no-repeat center/auto 46px;
+}
+
+.partners__item__ultimatecard {
+  background: $partner-color-12 url("../images/partner-12-ultimatecard.png") no-repeat center/auto 95px;
+}
