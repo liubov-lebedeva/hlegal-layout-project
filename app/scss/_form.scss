@@ -1,0 +1,68 @@
+.form {
+
+
+  &__container {
+  padding: 30px;
+  }
+
+  &__box {
+    background: $bg-color;
+    padding: 30px;
+    border-radius: $radius-md;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__title {
+    @include subtitle;
+    @include main-gradient-text;
+
+  }
+
+  &__name, &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__input {
+    background: $basic-white;
+    border-radius: $radius-sm;
+    border: 1px solid $basic-white;
+
+    & input {
+      padding: 15px;
+      outline: none;
+      color: $basic-black;
+    }
+    & input::placeholder {
+      color: $text-color;
+    }
+    & label:focus {
+      border-color: $regular-color;
+    }
+
+    &.message {
+      height: 130px;
+    }
+  }
+
+  &__subtitle {
+    @include subtitle;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__submit-button {
+    color: $basic-white;
+    text-align: center;
+    font-weight: 700;
+    padding: 18px;
+    border-radius: $radius-md;
+    background: $regular-color;
+    cursor: pointer;
+  }
+}
