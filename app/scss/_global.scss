@@ -51,13 +51,8 @@ body {
     border-radius: $radius-rounded;
     background: $separator-color;
 
-    &--gray {
+    &.gray {
       background: $text-color;
     }
   }
-}
-
-.facebook-icon {
-  width: 24px;
-  height: 24px;
 }

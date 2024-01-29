@@ -1,0 +1,107 @@
+.footer {
+  background-color: $bg-color;
+
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  &__separator {
+    background-color: $separator-color;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 30px;
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    @include viewport-md {
+      display: grid;
+      grid-template-columns: auto auto; // Define two columns
+      grid-template-rows: auto; // Define the rows
+    }
+  }
+
+  &__location-and-contacts {
+    @include viewport-md {
+      // Make the first column span through two rows
+      grid-row: span 2;
+    }
+  }
+
+  &__location, &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    @include viewport-md {
+      flex-direction: row;
+    }
+  }
+
+  &__location {
+    padding-bottom: 11px;
+  }
+
+  &__address {
+    color: $main-color;
+  }
+
+  &-map {
+    @include base-link($regular-color);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__contacts {
+  }
+
+  &__social {
+    height: 38px;
+
+    svg {
+      height: 38px;
+      width: 38px;
+      fill: $regular-color;
+      transition: .2s;
+    }
+
+    svg:hover {
+      fill: $accent-color;
+    }
+  }
+
+  &__phone {
+    @include base-link($alt-color)
+  }
+
+  &-mail {
+    @include base-link($regular-color);
+
+  }
+
+  &__trademark {
+    color: $text-color;
+    line-height: normal;
+    padding-top: 20px;
+    text-align: center;
+    @include viewport-md {
+      grid-column: 2;
+      grid-row: 1;
+      padding-top: 0;
+      text-align: right;
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
