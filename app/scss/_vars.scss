@@ -117,3 +117,14 @@ $breakpoint-xxl: 1920px;
     color: $hover-color;
   }
 }
+
+@mixin contact-link($color: $regular-color, $hover-color: $accent-color) {
+  color: $color;
+  text-decoration: none;
+  transition: .2s;
+  font-weight: 400;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
