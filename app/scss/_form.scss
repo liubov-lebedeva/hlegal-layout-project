@@ -1,8 +1,11 @@
+
 .form {
-
-
+  flex: 1 1 510px;
   &__container {
-  padding: 30px;
+    padding-bottom: 30px;
+    @include viewport-md {
+      padding-bottom: 60px;
+    }
   }
 
   &__box {
@@ -17,6 +20,9 @@
   &__title {
     @include subtitle;
     @include main-gradient-text;
+    @include viewport-md {
+      font-size: 30px;
+    }
 
   }
 
@@ -28,28 +34,36 @@
 
   &__input {
     background: $basic-white;
+    line-height: 1.6;
     border-radius: $radius-sm;
-    border: 1px solid $basic-white;
 
-    & input {
+    & input, & textarea {
       padding: 15px;
       outline: none;
       color: $basic-black;
+      resize: none;
+      width: 100%;
+      height: 100%;
+      border-radius: $radius-sm;
+      border: 1px solid $basic-white;
     }
-    & input::placeholder {
+
+    & input::placeholder, & textarea::placeholder {
       color: $text-color;
-    }
-    & label:focus {
-      border-color: $regular-color;
     }
 
     &.message {
       height: 130px;
     }
+
+    & input:focus, & textarea:focus {
+      border-color: $regular-color;
+    }
   }
 
   &__subtitle {
-    @include subtitle;
+    color: $text-color;
+    font-weight: 700;
     font-size: 14px;
     line-height: normal;
     letter-spacing: 1px;
@@ -64,5 +78,15 @@
     border-radius: $radius-md;
     background: $regular-color;
     cursor: pointer;
+    box-shadow: 0 0 20px 0 $box-shadow-color;
+    transition: .2s;
+
+    &:hover {
+      background: $hover-color;
+    }
+
+    &:active {
+      background: $active-color;
+    }
   }
 }

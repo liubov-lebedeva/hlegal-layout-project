@@ -1,4 +1,23 @@
+.container {
+  &.contact {
+    @include viewport-xl {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+}
+
+.wrap {
+  @include viewport-lg {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 60px;
+  }
+}
+
 .contacts {
+  flex: 1 1 510px;
 
   &__inner {
     padding-top: 30px;
@@ -27,20 +46,22 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
   }
 
   &__phone {
     @include contact-link($alt-color);
+    display: inline;
   }
 
   &-mail {
     @include contact-link($regular-color);
+    display: inline;
   }
 
   &__social {
     padding-top: 30px;
   }
-
 
 
   &__social-link {
@@ -49,7 +70,7 @@
     line-height: 1.3;
     letter-spacing: 1px;
     text-transform: uppercase;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-wrap: nowrap;
     gap: 10px;
